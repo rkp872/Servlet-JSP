@@ -1,0 +1,31 @@
+<taglib>
+  <tlib-version>2.0</tlib-version>
+  <jsp-version>2.0</jsp-version>
+  <short-name>quote</short-name>
+<uri>tag lib version id</uri>
+  <description>
+     This tag library contains several tag extensions 
+     useful for formatting content for HTML. 
+  </description>
+
+  <tag>
+    <name>mytag</name>
+    <tag-class>tags.MyTagHandler</tag-class>
+  </tag>
+  
+    <tag>
+    <name>printTable</name>
+    <tag-class>tags.tagHandler2</tag-class>
+    <body-content>tagdependent</body-content>
+    <attribute>
+      <name>num</name>
+      <required>true</required>
+    </attribute>
+    
+    <attribute>
+      <name>color</name>
+      <required>true</required>
+    </attribute>
+  </tag>
+  
+</taglib>

@@ -1,0 +1,167 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+	<display-name>Archetype Created Web Application</display-name>
+	<!-- Filter -->
+	<filter>
+		<filter-name>Filter1</filter-name>
+		<filter-class>Filter.MyFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>Filter1</filter-name>
+		<url-pattern>/ProfileServlet</url-pattern>
+		<url-pattern>/OrderServlet</url-pattern>
+	</filter-mapping>
+	
+	
+	<servlet>
+		<servlet-name>First</servlet-name>
+		<servlet-class>com.servlet.FirstServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Second</servlet-name>
+		<servlet-class>com.servlet.SecondServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Third</servlet-name>
+		<servlet-class>com.servlet.ThirdServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.servlet.RegisterServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>SuccessServlet</servlet-name>
+		<servlet-class>com.servlet.SuccessServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>s1</servlet-name>
+		<display-name>s1</display-name>
+		<description></description>
+		<servlet-class>com.attr.s1</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>s2</servlet-name>
+		<display-name>s2</display-name>
+		<description></description>
+		<servlet-class>com.attr.s2</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SessionDemo</servlet-name>
+		<display-name>SessionDemo</display-name>
+		<description></description>
+		<servlet-class>SessionTracking.servlet1</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>servlet2</servlet-name>
+		<display-name>servlet2</display-name>
+		<description></description>
+		<servlet-class>SessionTracking.servlet2</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<display-name>Register</display-name>
+		<description></description>
+		<servlet-class>RegModule.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>urlServlet1</servlet-name>
+		<display-name>urlServlet1</display-name>
+		<description></description>
+		<servlet-class>URLRewritting.urlServlet1</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>urlServlet2</servlet-name>
+		<display-name>urlServlet2</display-name>
+		<description></description>
+		<servlet-class>URLRewritting.urlServlet2</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ProfileServlet</servlet-name>
+		<display-name>ProfileServlet</display-name>
+		<description></description>
+		<servlet-class>Filter.ProfileServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>OrderServlet</servlet-name>
+		<display-name>OrderServlet</display-name>
+		<description></description>
+		<servlet-class>Filter.OrderServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>First</servlet-name>
+		<url-pattern>/web</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet-mapping>
+		<servlet-name>Second</servlet-name>
+		<url-pattern>/sec</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Third</servlet-name>
+		<url-pattern>/thi</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/registerServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SuccessServlet</servlet-name>
+		<url-pattern>/success</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>s1</servlet-name>
+		<url-pattern>/s1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>s2</servlet-name>
+		<url-pattern>/s2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SessionDemo</servlet-name>
+		<url-pattern>/servlet1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>servlet2</servlet-name>
+		<url-pattern>/servlet2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>urlServlet1</servlet-name>
+		<url-pattern>/urlServlet1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>urlServlet2</servlet-name>
+		<url-pattern>/urlServlet2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ProfileServlet</servlet-name>
+		<url-pattern>/ProfileServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OrderServlet</servlet-name>
+		<url-pattern>/OrderServlet</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>home.jsp</welcome-file>
+	</welcome-file-list>
+
+	
+</web-app>
